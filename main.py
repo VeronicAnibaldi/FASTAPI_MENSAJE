@@ -5,11 +5,11 @@ from fastapi import FastAPI, HTTPException
 #MODELO DEL MENSAJE
 class Mensaje(BaseModel):
     id: Optional[int] = None
-user: int
-mensaje: str
+    user: str
+    mensaje: str
 
 #CREAR INSTANCIA DE LA APLICACIÓN FASTAPI
-app = "FastApi" ()
+app = FastAPI()
 
 #DB SIMULADA
 mensaje_db: List[Mensaje] = []
